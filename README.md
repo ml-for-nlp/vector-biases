@@ -9,7 +9,9 @@ We are going to look at professions and the kind of attributes associated with t
 
 In the *data/* directory, you will find 20,000 vectors from the much larger set released [here](https://fasttext.cc/docs/en/english-vectors.html) (FastText system). Those are 300-dimensional vectors trained on Wikipedia and very large news corpora (16B words). 
 
-You only have a small code stub, showing you how to load the data and how to perform cosine similarity and nearest neighbours calculations over the semantic space. You are to expand this code to find evidence of biases.
+You have a small code stub in *explorer.py*, showing you how to load the data and how to perform cosine similarity and nearest neighbours calculations over the semantic space, and allowing you to explore t he data. 
+
+You are to use the stub to perform some simple investigation of your choice on the data. A small example is included in *example-question.py* to get you started.
 
 
 
