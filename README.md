@@ -9,29 +9,20 @@ We are going to look at professions and the kind of attributes associated with t
 
 In the *data/* directory, you will find 20,000 vectors from the much larger set released [here](https://fasttext.cc/docs/en/english-vectors.html) (FastText system). Those are 300-dimensional vectors trained on Wikipedia and very large news corpora (16B words). 
 
-You have a small code stub in *explorer.py*, showing you how to load the data and how to perform cosine similarity and nearest neighbours calculations over the semantic space. By running the code, you will also be able to explore the vector space. E.g.:
-
-     What would you like to do? (n = nearest neighbours, s=similarity, q=quit) n
-
-     Enter a word or 'x' to exit nearest neighbours: brilliant
-     ['brilliant', 'superb', 'magnificent', 'splendid', 'wonderful', 'clever', 'fantastic', 'terrific', 'fabulous', 'excellent', 'lovely', 'gorgeous', 'amazing', 'talented', 'spectacular', 'remarkable', 'stunning', 'brilliantly', 'witty', 'bright']
-
-     Enter a word or 'x' to exit nearest neighbours: x
-
-     What would you like to do? (n = nearest neighbours, s=similarity, q=quit) s
-     Input two words separated by a space or 'x' to exit similarity: man brilliant
-     SIM man brilliant 0.3745566349657189
-     Input two words separated by a space or 'x' to exit similarity: woman brilliant
-     SIM woman brilliant 0.3121614022495688
-     Input two words separated by a space or 'x' to exit similarity: man superb
-     SIM man superb 0.2622402620944517
-     Input two words separated by a space or 'x' to exit similarity: woman superb
-     SIM woman superb 0.21795562395218646
- 
-(We see here that the adjective *brilliant* and its first nearest neighbour *superb* are more similar to *man* than to *woman* in the space.)
+You have a small code stub in *bias.py*, showing you how to load the data and how to perform cosine similarity and nearest neighbours calculations over the semantic space. It also implements the idea from [Bolukbasi and colleagues](https://arxiv.org/abs/1607.06520) that a dimension of difference can be computed for a certain protected attribute (e.g. gender), and other terms projected onto it to understand their bias.
 
 
-Your task is to use the code stub to perform some simple investigation of your choice on the data. A small example is included in *example-question.py* to get you started.
 
+## The questions
 
+Using the code stub at your disposal, try and answer the following questions:
+
+* Which adjectives are related to brilliance, and do they tend to be more male than female?
+
+* How would you show the indirect bias investigated by Leslie and colleague using your findings about brilliance adjectives?
+
+* Try other terms to compute the difference vector. Is the specific choice of words important?
+
+* Which other biases could you investigate using the same technique? Give an example.
+~                                                  
 
