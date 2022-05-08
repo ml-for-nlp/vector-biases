@@ -23,6 +23,5 @@ Using the code stub at your disposal, try and answer the following questions:
 
 * Try other terms to compute the difference vector. Is the specific choice of words important?
 
-* Which other biases could you investigate using the same technique? Give an example.
-~                                                  
+* Which other biases could you investigate using the same technique? Give an example. 
 
